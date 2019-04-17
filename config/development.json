@@ -1,0 +1,14 @@
+{
+  "db": {
+    "username": "root",
+    "password": "1111",
+    "host": "localhost",
+    "database": "test",
+    "dialect": "mysql",
+    "pool": {
+      "max": 5,
+      "min": 0
+    },
+    "logging": true
+  }
+}
