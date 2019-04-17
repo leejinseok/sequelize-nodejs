@@ -25,14 +25,9 @@ class Member {
     this.model.hasMany(Article.model);
   }
 
-  async findAll() {
-    try {
-      return await this.model.findAll();
-    } catch (error) {
-      console.error(error);
-    }
+  findAll() {
+    return this.model.findAll();
   }
 }
-
 
 export default new Member();
