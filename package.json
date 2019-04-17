@@ -13,9 +13,7 @@
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon",
-    "db:sync": "cross-env NODE_ENV=development nodemon --exec babel-node src/bin/db/sync.js",
-    "create:article": "cross-env NODE_ENV=development nodemon --exec babel-node src/bin/article/create.js",
-    "create:member": "cross-env NODE_ENV=development nodemon --exec babel-node src/bin/member/create.js"
+    "migrate": "cross-env NODE_ENV=development babel-node src/scripts/migrate.js"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",

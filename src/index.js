@@ -6,13 +6,8 @@ import Article from './database/article';
 async function init() {
   try {
     associate();
-    const member = await Member.model.findOne({
-      where: {
-        id: 17
-      }
-    });
-
-    const result = await member.getArticles();
+    const members = await Member.findAll();
+    console.log(members);
   } catch (error) {
     console.error(error);    
   }

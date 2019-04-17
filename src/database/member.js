@@ -13,13 +13,24 @@ class Member {
       name: {
         type: Sequelize.DataTypes.STRING,
         allowNull: true,
+      },
+      email: {
+        type: Sequelize.DataTypes.STRING,
+        allowNull: true
       }
     });
   }
 
   associate() {
     this.model.hasMany(Article.model);
-    // this.model.belongsTo(Article.model);
+  }
+
+  async findAll() {
+    try {
+      return await this.model.findAll();
+    } catch (error) {
+      console.error(error);
+    }
   }
 }
 

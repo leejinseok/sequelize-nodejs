@@ -9,5 +9,5 @@ export function associate() {
 
 export default function sync() {
   associate();
-  db.sync({ force: true });
+  db.sync({ alter: true });
 }
