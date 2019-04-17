@@ -10,6 +10,10 @@ class Article {
         primaryKey: true,
         autoIncrement: true
       },
+      content: {
+        type: Sequelize.DataTypes.TEXT,
+        allowNull: true
+      }
     });
   }
 

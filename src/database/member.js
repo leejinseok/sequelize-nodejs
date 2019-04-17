@@ -19,6 +19,7 @@ class Member {
 
   associate() {
     this.model.hasMany(Article.model);
+    // this.model.belongsTo(Article.model);
   }
 }
 
